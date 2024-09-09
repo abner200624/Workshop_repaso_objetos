@@ -9,14 +9,28 @@ public class Workshop {
     public int sumarDosNumeros(int a, int b) {
         // TODO: Implementar el método para retornar la suma de dos números enteros.
         // Ejemplo: Si a = 3 y b = 5, el resultado debería ser 8.
-        return 0;
+        return a+b;
     }
 
     // Método que encuentra el mayor de tres números enteros
     public int mayorDeTresNumeros(int a, int b, int c) {
         // TODO: Implementar el método para retornar el mayor de los tres números enteros.
         // Ejemplo: Si a = 3, b = 7, y c = 5, el resultado debería ser 7.
-        return 0;
+        int resultao = 0;
+        if (a>b){
+            if (a>c){
+                resultao = a;
+            }else{
+                resultao = c;
+            }
+        }else{
+            if (b>c){
+                resultao = b;
+            }else{
+                resultao = c;
+            }
+        }
+        return resultao;
     }
 
     // Método que retorna la tabla de multiplicar de un número
@@ -243,7 +257,13 @@ Rock crushes Scissors
     }
 
     public double areaCirculo(double radio) {
-        return 0.0;
+
+        double pi = 3.1415926535897932384626433832795;
+        double area = 0;
+
+        area = pi*(radio*radio);
+
+        return area;
     }
 
     public String zoodiac(int day, int month) {
