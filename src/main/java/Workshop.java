@@ -45,7 +45,14 @@ public class Workshop {
         // TODO: Implementar el método para calcular el factorial de un número entero.
         // Ejemplo: Si n = 5, el resultado debería ser 120.
         // Lanzar IllegalArgumentException si n es negativo.
-        return 0;
+        int facto = 1;
+        if (n<0){
+            System.out.println("IllegalArgumentException");
+        }
+        for (int i=1; i<=n; i++){
+            facto *= i;
+        }
+        return facto;
     }
 
     // Método que verifica si un número es primo
@@ -258,7 +265,7 @@ Rock crushes Scissors
 
     public double areaCirculo(double radio) {
 
-        double pi = 3.1415926535897932384626433832795;
+        double pi = 3.141592653589793;
         double area = 0;
 
         area = pi*(radio*radio);
@@ -267,7 +274,193 @@ Rock crushes Scissors
     }
 
     public String zoodiac(int day, int month) {
-        return "";
+
+        String signo = "";
+
+        switch (month){
+            case 1:
+                if (day <= 31){
+                    if (day >= 1){
+                        if (day <= 19){
+                            signo = "Capricornio";
+                        }else {
+                            signo = "Acuario";
+                        }
+                    }else{
+                        signo = "Invalid Date";
+                    }
+                }else{
+                    signo = "Invalid Date";
+                }
+                break;
+            case 2:
+                if (day <= 29){
+                    if (day >= 1){
+                        if (day <= 18){
+                            signo = "Acuario";
+                        }else {
+                            signo = "Piscis";
+                        }
+                    }else{
+                        signo = "Invalid Date";
+                    }
+                }else{
+                    signo = "Invalid Date";
+                }
+                break;
+            case 3:
+                if (day <= 31){
+                    if (day >= 1){
+                        if (day <= 20){
+                            signo = "Piscis";
+                        }else {
+                            signo = "Aries";
+                        }
+                    }else{
+                        signo = "Invalid Date";
+                    }
+                }else{
+                    signo = "Invalid Date";
+                }
+                break;
+            case 4:
+                if (day <= 30){
+                    if (day >= 1){
+                        if (day <= 20){
+                            signo = "Aries";
+                        }else {
+                            signo = "Tauro";
+                        }
+                    }else{
+                        signo = "Invalid Date";
+                    }
+                }else{
+                    signo = "Invalid Date";
+                }
+                break;
+            case 5:
+                if (day <= 31){
+                    if (day >= 1){
+                        if (day <= 20){
+                            signo = "Tauro";
+                        }else {
+                            signo = "Gemini";
+                        }
+                    }else{
+                        signo = "Invalid Date";
+                    }
+                }else{
+                    signo = "Invalid Date";
+                }
+                break;
+            case 6:
+                if (day <= 30){
+                    if (day >= 1){
+                        if (day <= 20){
+                            signo = "Gemini";
+                        }else {
+                            signo = "Cancer";
+                        }
+                    }else{
+                        signo = "Invalid Date";
+                    }
+                }else{
+                    signo = "Invalid Date";
+                }
+                break;
+            case 7:
+                if (day <= 31){
+                    if (day >= 1){
+                        if (day <= 22){
+                            signo = "Cancer";
+                        }else {
+                            signo = "Leo";
+                        }
+                    }else{
+                        signo = "Invalid Date";
+                    }
+                }else{
+                    signo = "Invalid Date";
+                }
+                break;
+            case 8:
+                if (day <= 31){
+                    if (day >= 1){
+                        if (day <= 22){
+                            signo = "Leo";
+                        }else {
+                            signo = "Virgo";
+                        }
+                    }else{
+                        signo = "Invalid Date";
+                    }
+                }else{
+                    signo = "Invalid Date";
+                }
+                break;
+            case 9:
+                if (day <= 30){
+                    if (day >= 1){
+                        if (day <= 22){
+                            signo = "Virgo";
+                        }else {
+                            signo = "Libra";
+                        }
+                    }else{
+                        signo = "Invalid Date";
+                    }
+                }else{
+                    signo = "Invalid Date";
+                }
+                break;
+            case 10:
+                if (day <= 31){
+                    if (day >= 1){
+                        if (day <= 22){
+                            signo = "Libra";
+                        }else {
+                            signo = "Escorpio";
+                        }
+                    }else{
+                        signo = "Invalid Date";
+                    }
+                }else{
+                    signo = "Invalid Date";
+                }
+                break;
+            case 11:
+                if (day <= 30){
+                    if (day >= 1){
+                        if (day <= 21){
+                            signo = "Escorpio";
+                        }else {
+                            signo = "Sagitario";
+                        }
+                    }else{
+                        signo = "Invalid Date";
+                    }
+                }else{
+                    signo = "Invalid Date";
+                }
+                break;
+            case 12:
+                if (day <= 31){
+                    if (day >= 1){
+                        if (day <= 21){
+                            signo = "Sagitario";
+                        }else {
+                            signo = "Capricornio";
+                        }
+                    }else{
+                        signo = "Invalid Date";
+                    }
+                }else{
+                    signo = "Invalid Date";
+                }
+                break;
+        }
+
+        return signo;
     }
 
 
